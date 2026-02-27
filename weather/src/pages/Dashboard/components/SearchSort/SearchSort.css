@@ -1,0 +1,115 @@
+.ss-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.ss-input {
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  backdrop-filter: blur(6px);
+  transition: 0.25s ease;
+}
+
+.ss-input::placeholder {
+   color: rgba(255,255,255,0.7);
+}
+
+.ss-input:focus {
+  border-bottom-color: white;
+}
+
+.ss-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ss-btn {
+  padding: 8px 12px;
+  background: #f7faff;
+  color: #003f7f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.ss-btn:hover {
+  background: #e6f0ff;
+}
+
+.ss-dropdown {
+  position: relative;
+}
+
+.ss-dropdown-content {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background: #005bb692;
+  backdrop-filter: blur(4px);
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 4px 0;
+  z-index: 10;
+}
+
+.ss-dropdown:hover .ss-dropdown-content {
+  display: block;
+}
+
+.ss-dropdown-content button {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ss-dropdown-content button:hover {
+  background: #cce0ff;
+  color: #003f7f
+}
+
+@media (min-width: 320px) {
+  .ss-row {
+    gap: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ss-container {
+    max-width: 600px;
+  }
+
+  .ss-input {
+    font-size: 20px;
+    padding: 14px 0;
+    border-bottom-width: 3px;
+  }
+
+  .ss-row {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .ss-btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .ss-dropdown-content button {
+    font-size: 15px;
+  }
+}

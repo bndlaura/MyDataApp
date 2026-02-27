@@ -1,0 +1,26 @@
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-btn {
+  padding: 8px 14px;
+  background: #fff;
+  color: #003f7f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  opacity: 0.85; 
+}
+
+
+.page-info {
+  opacity: 0.9;
+  font-size: 16px; 
+}

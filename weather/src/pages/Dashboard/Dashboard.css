@@ -1,0 +1,23 @@
+.dashboard-wrapper {
+  padding: 20px;
+  color: white;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
+
+.top-section { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 34px; 
+  margin-bottom: 28px; 
+}
+
+@media (min-width: 1024px) { 
+  .top-section { 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+  } 
+}

@@ -1,0 +1,72 @@
+.users-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.user-card {
+  background: rgba(255,255,255,0.1);
+  padding: 16px; 
+  border-radius: 8px;
+}
+
+.label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.value {
+  font-size: 16px; 
+  margin-bottom: 10px;
+}
+
+.danger-btn {
+  padding: 8px 14px; 
+  background: #fe5252f6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px; 
+  font-weight: 600;
+}
+
+.table-wrapper {
+  display: none;
+  margin-top: 20px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px; 
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 16px; 
+}
+
+.users-table th {
+  font-weight: 600;
+  text-align: left;
+  font-size: 17px; 
+}
+
+.small {
+  padding: 8px 14px;
+  font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+  .users-mobile {
+    display: none;
+  }
+
+  .table-wrapper {
+    display: block;
+  }
+}

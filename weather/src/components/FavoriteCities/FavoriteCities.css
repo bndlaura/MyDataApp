@@ -1,0 +1,116 @@
+.fav-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto 0 auto;
+  color: white;
+}
+
+.fav-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.fav-list {
+  background: rgba(255, 255, 255, 0.135);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 10px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.fav-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.fav-item:last-child {
+  border-bottom: none;
+}
+
+.fav-remove {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.fav-remove:hover {
+  opacity: 1;
+  color: rgb(255, 227, 137);
+}
+
+.fav-item {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.fav-item:hover {
+  color: rgb(255, 227, 137);
+}
+
+@media (min-width: 1024px) {
+  .fav-wrapper {
+    max-width: 100%; 
+    margin: 0;
+  }
+
+  .fav-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .fav-list {
+    padding: 18px 24px;
+  }
+
+  .fav-item {
+    padding: 18px 24px;
+  }
+
+  .fav-remove {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .fav-wrapper {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .fav-list {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .fav-item {
+    background: rgba(255, 255, 255, 0.135);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 24px;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fav-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .fav-remove {
+    font-size: 20px;
+  }
+}

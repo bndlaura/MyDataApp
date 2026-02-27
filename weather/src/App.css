@@ -1,0 +1,7 @@
+.loading-text,
+.error-text,
+.empty-text {
+    font-size: 18px;
+    opacity: 0.8;
+    text-align: center;
+}
