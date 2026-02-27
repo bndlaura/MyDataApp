@@ -40,8 +40,8 @@ Weatherly is a React application that combines a modern weather interface with a
 ##  Installation
 
 ```bash
-git clone https://github.com/username/weatherly.git
-cd weatherly
+git clone https://github.com/bndlaura/MyDataApp.git
+cd weather
 npm install
 ```
 
